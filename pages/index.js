@@ -17,11 +17,10 @@ export default function Home() {
           </Link>
 
           <nav className="hidden sm:flex space-x-6 text-sm sm:text-base text-gray-800 font-medium">
-            <Link href="/new-to-islam" className="hover:text-sky-800">I'M NEW TO ISLAM</Link>
-            <Link href="/believers" className="hover:text-sky-800">BELIEVERS</Link>
-            <Link href="/faqs" className="hover:text-sky-800">FAQS</Link>
-            <Link href="/history" className="hover:text-sky-800">HISTORY</Link>
-            <Link href="/begin" className="hover:text-sky-800">BEGIN YOUR JOURNEY</Link>
+            <Link href="/why-it-matters" className="hover:text-sky-800">WHY IT MATTERS</Link>
+            <Link href="/creator" className="hover:text-sky-800">THE CREATOR</Link>
+            <Link href="/what-islam" className="hover:text-sky-800">WHAT ISLAM</Link>
+            <Link href="/journey" className="hover:text-sky-800">YOUR JOURNEY</Link>
           </nav>
 
           <button className="sm:hidden text-gray-700 focus:outline-none" onClick={() => setMenuOpen(!menuOpen)}>
@@ -37,75 +36,60 @@ export default function Home() {
 
         {menuOpen && (
           <div className="sm:hidden px-4 pb-4 space-y-2 bg-white shadow">
-            <Link href="/new-to-islam" className="block text-gray-800 hover:text-sky-800">I'M NEW TO ISLAM</Link>
-            <Link href="/believers" className="block text-gray-800 hover:text-sky-800">BELIEVERS</Link>
-            <Link href="/faqs" className="block text-gray-800 hover:text-sky-800">FAQS</Link>
-            <Link href="/history" className="block text-gray-800 hover:text-sky-800">HISTORY</Link>
-            <Link href="/begin" className="block text-gray-800 hover:text-sky-800">BEGIN YOUR JOURNEY</Link>
+            <Link href="/why-it-matters" className="block text-gray-800 hover:text-sky-800">WHY IT MATTERS</Link>
+            <Link href="/creator" className="block text-gray-800 hover:text-sky-800">THE CREATOR</Link>
+            <Link href="/what-islam" className="block text-gray-800 hover:text-sky-800">WHAT ISLAM</Link>
+            <Link href="/journey" className="block text-gray-800 hover:text-sky-800">YOUR JOURNEY</Link>
           </div>
         )}
       </header>
 
       {/* MAIN */}
       <main className="max-w-7xl mx-auto px-4 py-12 text-gray-900">
-        <section className="text-center mb-16">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-sky-900">Explore Islam with Heart and Mind</h1>
-          <p className="text-lg text-gray-700 mb-6">For the seeker, the thinker, the believer—welcome to a journey of purpose.</p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/what-is-islam" className="border border-gray-800 px-5 py-2 rounded hover:bg-gray-100">What is Islam?</Link>
-            <Link href="/who-is-allah" className="border border-gray-800 px-5 py-2 rounded hover:bg-gray-100">Who is Allah?</Link>
-            <Link href="/does-god-exist" className="border border-gray-800 px-5 py-2 rounded hover:bg-gray-100">Does God Exist?</Link>
-          </div>
-        </section>
-
-        <section className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center sm:text-left mb-16">
-          <div>
-            <h3 className="text-xl font-semibold mb-3">🧠 For Thinkers</h3>
-            <ul className="space-y-2 text-gray-700">
-              <li>Logic of God</li>
-              <li>Qur’an & Science</li>
-              <li>Why Islam?</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold mb-3">🕊️ For Seekers</h3>
-            <ul className="space-y-2 text-gray-700">
-              <li>Peace in Islam</li>
-              <li>Afterlife</li>
-              <li>Who is Muhammad ﷺ</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold mb-3">🧎 For Muslims</h3>
-            <ul className="space-y-2 text-gray-700">
-              <li>How to Pray</li>
-              <li>Daily Sunnah</li>
-              <li>Duas for Difficult Times</li>
-            </ul>
-          </div>
-        </section>
-
-        <section className="text-center mb-16">
-          <h2 className="text-2xl font-semibold mb-4 text-sky-900">Learn the Basics</h2>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/pillars" className="border px-4 py-2 rounded hover:bg-gray-100">Pillars of Islam</Link>
-            <Link href="/beliefs" className="border px-4 py-2 rounded hover:bg-gray-100">Core Beliefs</Link>
-            <Link href="/islam-one-page" className="border px-4 py-2 rounded hover:bg-gray-100">Islam in 1 Page</Link>
-            <Link href="/misconceptions" className="border px-4 py-2 rounded hover:bg-gray-100">Common Misconceptions</Link>
-          </div>
-        </section>
-
+        {/* HERO */}
         <section className="text-center mb-20">
-          <h2 className="text-2xl font-semibold mb-4 text-sky-900">Got Questions?</h2>
-          <form className="max-w-xl mx-auto space-y-4 text-left">
-            <input type="text" placeholder="Name (optional)" className="w-full border border-gray-300 px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-sky-600" />
-            <input type="email" placeholder="Email (optional)" className="w-full border border-gray-300 px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-sky-600" />
-            <textarea placeholder="Your question" rows={4} className="w-full border border-gray-300 px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-sky-600"></textarea>
-            <button type="submit" className="w-full bg-sky-800 text-white py-2 rounded hover:bg-sky-900 transition">Submit</button>
-            <p className="text-sm text-gray-500 text-center">We respond within 24 hours.</p>
-          </form>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-sky-900">What if you've lived your whole life... without knowing why?</h1>
+          <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">Whether you believe in one God, many gods, or none — the answers begin with clarity and purpose.</p>
+          <Link href="/why-it-matters" className="inline-block bg-sky-900 text-white px-6 py-3 rounded hover:bg-sky-800">I want to know why I exist</Link>
         </section>
 
+        {/* BIG QUESTIONS + INTRO */}
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+          <div>
+            <h2 className="text-2xl font-bold mb-4">The Big Questions</h2>
+            <ul className="space-y-4">
+              <li className="border rounded px-4 py-3 flex items-center gap-3"><span className="text-xl">❓</span> Why do we exist?</li>
+              <li className="border rounded px-4 py-3 flex items-center gap-3"><span className="text-xl">💿</span> What happens after death?</li>
+              <li className="border rounded px-4 py-3 flex items-center gap-3"><span className="text-xl">☀️</span> Why is there suffering in the world?</li>
+              <li className="border rounded px-4 py-3 flex items-center gap-3"><span className="text-xl">✴️</span> Is there really a Creator?</li>
+            </ul>
+            <Link href="/why-it-matters" className="mt-6 inline-block bg-sky-900 text-white px-6 py-2 rounded hover:bg-sky-800">Explore These Questions</Link>
+          </div>
+
+          <div className="space-y-12">
+            <div>
+              <h2 className="text-2xl font-bold mb-2">What is Islam?</h2>
+              <p className="mb-4 text-gray-700">Not a culture, not a brand. Islam is the timeless message of truth — the final revelation reconnecting humanity with its Creator.</p>
+              <Link href="/creator" className="inline-block bg-sky-900 text-white px-5 py-2 rounded hover:bg-sky-800">Discover the Creator</Link>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-bold mb-2">Start Your Journey</h2>
+              <ul className="mb-4 list-disc pl-5 text-gray-700">
+                <li>I want to reconnect with prayer</li>
+                <li>I want to understand the Qur’an</li>
+              </ul>
+              <Link href="/journey" className="inline-block bg-sky-900 text-white px-5 py-2 rounded hover:bg-sky-800">Start My Journey</Link>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-bold mb-2">Ask. Anything. Anonymously</h2>
+              <p className="text-gray-700">Confused? Unsure? Skeptical? Ask anything — no judgment, no labels.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* FOOTER */}
         <footer className="border-t pt-6 text-center text-sm text-gray-600">
           <div className="flex flex-wrap justify-center gap-4 mb-4">
             <Link href="/about" className="hover:underline">About</Link>
