@@ -51,11 +51,12 @@ export default function Home() {
         {/* HERO */}
         <section className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-sky-900">What if you’ve been living your whole life… without knowing why?</h1>
-          <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">Whether you believe in God, many gods, no god — or just feel lost — the answers begin here.</p>
+          <p className="text-lg text-gray-700 mb-2 max-w-2xl mx-auto">Whether you believe in God, many gods, no god — or just feel lost — the answers begin here.</p>
+          <p className="text-sm text-gray-500 mb-6">Clarity, logic, and purpose — all rooted in divine truth.</p>
           <Link href="/why-it-matters" className="inline-block bg-sky-900 text-white px-6 py-3 rounded hover:bg-sky-800">I want to know why I exist</Link>
         </section>
 
-        {/* BIG QUESTIONS + SUMMARY */}
+        {/* BIG QUESTIONS + WHAT IS ISLAM */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
           <div>
             <h2 className="text-2xl font-bold mb-4">The Big Questions</h2>
@@ -64,18 +65,18 @@ export default function Home() {
               <li className="border rounded px-4 py-3 flex items-center gap-3">📍 What happens after death?</li>
               <li className="border rounded px-4 py-3 flex items-center gap-3">☀️ Is there really suffering in the world?</li>
             </ul>
-            <Link href="/questions" className="mt-6 inline-block bg-sky-900 text-white px-6 py-2 rounded hover:bg-sky-800">Explore These Questions</Link>
+            <Link href="/questions" className="mt-6 inline-block bg-white text-sky-900 border border-sky-900 px-6 py-2 rounded hover:bg-sky-50">Explore These Questions</Link>
           </div>
 
           <div>
             <h2 className="text-2xl font-bold mb-4">What is Islam?</h2>
-            <p className="text-gray-700 mb-4">Islam is not a culture or brand. It’s the timeless message from the Creator—calling you back to truth, purpose, and clarity.</p>
+            <p className="text-gray-700 mb-4">Not a culture. Not a trend. Islam is the timeless revelation from the Creator — a call back to clarity, worship, and purpose.</p>
             <Link href="/creator" className="inline-block bg-sky-900 text-white px-5 py-2 rounded hover:bg-sky-800">Discover the Creator</Link>
           </div>
         </section>
 
-        {/* LEARN + ASK */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+        {/* LEARN BASICS + ASK + JOURNEY */}
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
           <div>
             <h2 className="text-2xl font-bold mb-4">Learn the Basics</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -88,12 +89,23 @@ export default function Home() {
           <div>
             <h2 className="text-2xl font-bold mb-4">Ask Anything (Anonymous)</h2>
             <p className="text-gray-700 mb-4">Unsure? Confused? Curious? Ask anonymously — no judgment, no labels.</p>
-            <form className="space-y-4">
+            <form className="space-y-3">
               <input type="text" placeholder="Name (optional)" className="w-full border px-3 py-2 rounded" />
               <input type="email" placeholder="Email (optional)" className="w-full border px-3 py-2 rounded" />
               <textarea placeholder="Your question" rows={3} className="w-full border px-3 py-2 rounded"></textarea>
               <button type="submit" className="w-full bg-sky-900 text-white py-2 rounded hover:bg-sky-800">Submit</button>
+              <p className="text-xs text-center text-gray-500">We respond within 24 hours.</p>
             </form>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Start Your Journey</h2>
+            <ul className="list-disc pl-5 text-gray-700 mb-4 space-y-1">
+              <li>I want to reconnect with prayer</li>
+              <li>I want to understand the Qur’an</li>
+              <li>I want to live with purpose</li>
+            </ul>
+            <Link href="/journey" className="inline-block bg-sky-900 text-white px-5 py-2 rounded hover:bg-sky-800">Start My Journey</Link>
           </div>
         </section>
 
