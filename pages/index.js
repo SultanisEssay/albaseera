@@ -2,6 +2,43 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
+    import Image from 'next/image';
+import Link from 'next/link';
+import logo from '../public/albaseera-logo.png'; // Make sure to place the image in public/
+
+export default function Home() {
+  return (
+    <>
+      {/* HEADER */}
+      <header className="w-full bg-white border-b">
+        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+          {/* Logo */}
+          <Link href="/" className="flex items-center space-x-2">
+            <Image
+              src={logo}
+              alt="Albaseera Logo"
+              width={40}
+              height={40}
+              className="object-contain"
+            />
+            <span className="text-xl font-bold text-sky-900 hidden sm:inline">ALBASEERA</span>
+          </Link>
+
+          {/* Navigation */}
+          <nav className="space-x-4 text-sm sm:text-base text-gray-800 font-medium hidden sm:block">
+            <Link href="/new-to-islam" className="hover:text-sky-800">I'M NEW TO ISLAM</Link>
+            <Link href="/believers" className="hover:text-sky-800">BELIEVERS</Link>
+            <Link href="/faqs" className="hover:text-sky-800">FAQS</Link>
+            <Link href="/history" className="hover:text-sky-800">HISTORY</Link>
+            <Link href="/begin" className="hover:text-sky-800">BEGIN YOUR JOURNEY</Link>
+          </nav>
+        </div>
+      </header>
+
+      {/* Main homepage */}
+      <main className="max-w-7xl mx-auto px-4 py-12 text-gray-900">
+        {/* ... Your existing homepage sections go here ... */}
+    
     <main className="max-w-7xl mx-auto px-4 py-12 text-gray-900">
       {/* HERO */}
       <section className="text-center mb-16">
